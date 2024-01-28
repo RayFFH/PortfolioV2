@@ -223,7 +223,7 @@ strong {
   .project-card img {
     display: flex;
     flex-direction: column;
-    width: 375px !important;
+    width: 300px !important;
     height: 200px;
     object-fit: cover;
     overflow-clip-margin: content-box;
