@@ -178,7 +178,7 @@ strong {
     height: 1000px;
     flex-basis: 100%;
     flex-direction: column;
-    min-width: 50%;
+    //min-width: 50%;
     align-items: center;
     align-items: stretch;
   }
@@ -186,7 +186,7 @@ strong {
   .project-card img {
     flex: 1 1 0;
     flex-direction: column;
-    width: 400px !important;
+    width: 350px !important;
     height: 200px;
     object-fit: cover;
     overflow-clip-margin: content-box;
@@ -210,11 +210,11 @@ strong {
   }
   .project-info {
     display: relative;
-    height: 400px;
+    height: 500px;
     //flex-basis: 100%;
     //font-size: 2px;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 100%;
     align-items: center;
     align-items: stretch;
     margin: 40px;
@@ -242,18 +242,21 @@ strong {
     width: 100%;
     padding-left: 4em;
     line-height: 1.5rem;
-
-    @media (min-width: 390px) and (max-width: 875px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0;
-      /* max-width: 350px;
-    min-width: 300px; */
-      height: 50%;
-    }
   }
 }
+
+@media (min-width: 390px) and (max-width: 875px) {
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    /* max-width: 350px;
+    min-width: 300px; */
+    height: 50%;
+  }
+}
+
 .project-buttons a {
   text-decoration: none;
   align-items: left;
@@ -262,7 +265,7 @@ strong {
   padding: 0.5em 1em;
 }
 
-@media (max-width: 875px) .project-buttons {
+/* @media (max-width: 875px) .project-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -271,7 +274,7 @@ strong {
 @media (max-width: 875px) .project-buttons {
   display: flex;
   flex-direction: column;
-}
+} */
 .project-buttons {
   margin-top: 1.5em;
   align-items: center;
