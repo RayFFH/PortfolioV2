@@ -186,7 +186,7 @@ strong {
     //flex: 1 1 0;
     //flex-direction: column;
     width: 350px !important;
-    height: 200px;
+    height: 200px !important;
     //object-fit: cover;
     //overflow-clip-margin: content-box;
     //overflow: clip;
@@ -224,7 +224,7 @@ strong {
     //display: flex;
     //flex-direction: column;
     width: 300px !important;
-    height: 200px;
+    height: 200px !important;
     //object-fit: cover;
     //overflow-clip-margin: content-box;
     //overflow: clip;
