@@ -161,6 +161,7 @@ strong {
     flex-direction: column;
     align-items: center;
     padding: 1em;
+    gap: 0em;
   }
 }
 .project-card {
@@ -174,12 +175,13 @@ strong {
 
 @media (min-width: 390px) and (max-width: 875px) {
   .project-card {
-    height: 1000px;
+    height: 700px;
     flex-basis: 100%;
     flex-direction: column;
     //min-width: 50%;
     align-items: center;
     align-items: stretch;
+    margin-top: 20px;
   }
 
   .project-card img {
@@ -205,7 +207,7 @@ strong {
 }
 @media (max-width: 390px) {
   .project-card {
-    height: 1000px;
+    height: 700px;
     display: inline;
   }
   .project-info {
@@ -290,8 +292,8 @@ strong {
   max-width: 870px;
 
   @media (max-width: 875px) {
-    max-width: 400px;
-    margin-left: 30px;
+    max-width: 330px;
+    margin-left: 5px;
     margin-top: 2em;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     padding: 0;
@@ -305,7 +307,7 @@ strong {
   text-align: center;
   width: 100px;
   height: 100px;
-  margin-left: 30px;
+  //margin-left: 30px;
 }
 
 * {
