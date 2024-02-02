@@ -3,11 +3,14 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
       </head>
 <body>
  
     <div class="container">
-      <div class="navbar">
+      <!-- <div class="navbar">
         <div class="brand-title"></div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -22,18 +25,36 @@
             </li>
           </ul>
         </div>
-      </div>
-
+      </div> -->
+      
+      <div class="introback">
       <section class="intro-card">
-        <h2><strong>P</strong>hoenix <strong>S</strong>mart</h2>
-        <p>Full-Stack Developer</p>
+        <div id="text-container">
+          <h2><strong>P</strong>hoenix <strong>S</strong>mart</h2>
+          <p>Full-Stack Developer</p>
+          <p style="font: 10px; height:20vh;">Making User Friendly Applications.</p>
+        </div>
+      
+      
       </section>
+    </div>
 
-      <div class="intro-icons">
+    <section class="aboutme">
+    <div class="about-me">
+      <h2>About me</h2>
+      <br></br>
+      <p>First of all, thanks for visiting my profile! To keep it short, I like making things and solving problems. I am an electrical engineer turned software engineer but designing and creating solutions is something that will always stay with me. Have a look at what I've made below. I'll be working on adding features to my kanji learning application. If you want to work with me, or discuss anything shoot me a message through email or my linkedin.
+      </p>
+    </div>
+    <img src="images/face2.jpg" alt="time-dashboard">
+  </section>
+    
+
+      <!-- <div class="intro-icons">
         <a href="https://github.com/RayFFH" target="blank_"><img src="images/github.png" alt="github" id="github"></a>
         <span class="icon-spacing"></span> <!-- Add a span with a class for spacing -->
-        <a href="https://www.linkedin.com/in/phoenixsmart/" target="_blank"><img src="images/linkedin.png" alt="linkedin" id="linkedin"></a>
-      </div>
+        <!-- <a href="https://www.linkedin.com/in/phoenixsmart/" target="_blank"><img src="images/linkedin.png" alt="linkedin" id="linkedin"></a> -->
+      <!-- </div> --> -->
 
       <div class="arrow-container">
         <a href="#projects">
@@ -41,6 +62,55 @@
           <div class="arrow-down"></div>
         </a>
       </div>
+
+      <section class="skills">
+        <h5>Skills and Tools</h5>
+        <div class="tech-stack">
+        <div class="icon-wrapper">
+          <img src="images/html.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+        <div class="icon-wrapper">
+          <img src="images/js.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+        <div class="icon-wrapper">
+          <img src="images/nodejs.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+      
+        <div class="icon-wrapper">
+          <img src="images/react.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+        <div class="icon-wrapper">
+          <img src="images/bootstrap.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+     
+        <div class="icon-wrapper">
+          <img src="images/postgre.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+        <div class="icon-wrapper">
+          <img src="images/mysql.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+      
+        <div class="icon-wrapper">
+          <img src="images/python.png" alt="">
+          <span class="icon-title"></span>
+        </div>
+
+      </div>
+      </section>
+
 
       <section class="my-projects" id="projects">
         <h1 style="text-align: center;">My Projects</h1>
@@ -124,6 +194,54 @@
         </div>
 
         <div class="project-card">
+          <img src="images/Homelife.png" alt="time-dashboard">
+          <div class="project-info">
+            <h2>Property Buying</h2>
+            <p>
+             Website for users to rent or buy property within London.
+            </p>
+            <div class="stack">
+              <h3>Skills and Technologies used:</h3>
+              <ul>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+                <li>Javascript</li>
+                <li>SCSS</li>
+              </ul>
+            </div>
+            <div class="project-buttons">
+              <a href="https://rayffh.github.io/EducationWebsite/" target="_blank">View</a>
+              <a href="https://github.com/RayFFH/CarRental" target="_blank">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/Educationwebsite.png" alt="time-dashboard">
+          <div class="project-info">
+            <h2>Property Buying</h2>
+            <p>
+             Website for users to rent or buy property within London.
+            </p>
+            <div class="stack">
+              <h3>Skills and Technologies used:</h3>
+              <ul>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+                <li>Javascript</li>
+                <li>SCSS</li>
+              </ul>
+            </div>
+            <div class="project-buttons">
+              <a href="https://rayffh.github.io/PropertyBuying/" target="_blank">View</a>
+              <a href="https://github.com/RayFFH/CarRental" target="_blank">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
           <img src="images/carrental.png" alt="time-dashboard">
           <div class="project-info">
             <h2>Car Rental Website</h2>
@@ -146,7 +264,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <!-- <div class="project-card">
           <img src="images/pitchaccent.png" alt="time-dashboard">
           <div class="project-info">
             <h2>Pitch Accent App</h2>
@@ -166,7 +284,7 @@
               <a href="https://github.com/RayFFH/Japanese-Pitch-Accent-App" target="_blank">Source Code</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         
 
@@ -184,56 +302,7 @@
 
       
       
-    
 
-
-      <section class="skills">
-        <h5>Skills and Tools</h5>
-        <div class="tech-stack">
-        <div class="icon-wrapper">
-          <img src="images/html.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-        <div class="icon-wrapper">
-          <img src="images/js.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-        <div class="icon-wrapper">
-          <img src="images/nodejs.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-      
-        <div class="icon-wrapper">
-          <img src="images/react.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-        <div class="icon-wrapper">
-          <img src="images/bootstrap.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-     
-        <div class="icon-wrapper">
-          <img src="images/postgre.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-        <div class="icon-wrapper">
-          <img src="images/mysql.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-      
-        <div class="icon-wrapper">
-          <img src="images/python.png" alt="">
-          <span class="icon-title"></span>
-        </div>
-
-      </div>
-      </section>
 
       </div>
 
@@ -245,6 +314,35 @@
           <a href="https://www.linkedin.com/in/phoenixsmart/" target="_blank"><img src="images/linkedin.png" alt="linkedin" id="linkedin-footer"></a>
         </div>
       </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var introCard = document.querySelector('.intro-card');
+      
+          // Add the 'show' class to trigger the fade-in effect after a delay
+          setTimeout(function () {
+            introCard.classList.add('show');
+          }, 500); // Adjust the delay (in milliseconds) as needed
+        });
+      </script>
+
+ 
+      <script>
+      //   document.addEventListener('DOMContentLoaded', function () {
+      //     VANTA.NET({
+      //       el: "#Vanta",
+      //       mouseControls: true,
+      //       touchControls: true,
+      //       gyroControls: false,
+      //       minHeight: 200.00,
+      //       minWidth: 200.00,
+      //       scale: 1.00,
+      //       scaleMobile: 1.00,
+      //       color: 0x0,
+      //       backgroundColor: 0xffffff
+      //       z-index= 3;
+      //     });
+      //   });
+      // </script>
     </body>
     </html>
    

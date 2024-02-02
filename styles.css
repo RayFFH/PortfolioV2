@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   color: black;
   background-color: #f0ebe3;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 @media (max-width: 800px) {
   .navbar {
@@ -84,15 +89,105 @@ span {
   font-weight: 700;
   padding: 1rem;
 }
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #7d9d9c;
+  //background: linear-gradient(to bottom, #f0ebe3 0%, white 60%, #f0ebe3 100%);
+  background-color: #7d9d9c;
+  padding: 20px; /* Add padding as needed */
+  //background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+}
+/* .aboutme {
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  color: #fff;
+  height: 100%;
+  border-top: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+} */
+
+.about-me {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  //margin-right: 20px; /* Adjust the margin as needed for spacing between text and image */
+}
+
+.aboutme img {
+  border-radius: 50%;
+  height: 218px; /* Set the height as needed */
+  width: 240px; /* Set the width as needed */
+}
+.about-me h2 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  margin-left: 4rem;
+  color: black;
+  width: 70%;
+}
+
+.about-me p {
+  display: flex;
+  font-size: 1.2rem;
+  //justify-content: center;
+  //align-items: center;
+  line-height: 1.6;
+  margin-left: 4rem;
+  color: black;
+  width: 70%;
+}
 
 .intro-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   color: #7d9d9c;
   padding: 1em;
-  margin-top: 7em;
+  margin-top: 1em;
   text-align: center;
   font-size: 2rem;
   line-height: 0.5em;
   animation: myAnim 1s ease 0s 1 normal forwards;
+  //margin-left: 50px; /* Adjust the margin-left */
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease-in-out;
+  height: 100vh;
+  //width: 100%;
+}
+
+.intro-card.show {
+  opacity: 1; /* Set opacity to 1 when the show class is added */
+}
+
+.introback {
+}
+#Vanta {
+  z-index: 99;
+}
+
+#text-container {
+  position: inline;
+  z-index: 2; /* Adjust the z-index as needed */
+}
+
+.image-container {
+  margin-right: 50px; /* Adjust the value as needed to increase the gap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 @media (max-width: 875px) {
   .intro-card h2 {
@@ -355,5 +450,38 @@ h5 {
 @media (max-width: 1399px) {
   h5 {
     margin-left: 30px; /* Add margin for screens less than 1400px */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    flex-direction: column-reverse; /* Reverse the order on smaller screens */
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .about-me h1 {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  #text-container {
+    line-height: 1.5;
+  }
+  .about-me p {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .about-me {
+    width: 100%;
+    margin: auto;
+  }
+
+  .about-me img {
+    order: -1; /* Move the image above the header */
+    margin-bottom: 30px;
+    padding-bottom: 5px; /* Add margin as needed for spacing */
+    width: 100%;
   }
 }
