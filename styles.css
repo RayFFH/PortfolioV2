@@ -466,6 +466,11 @@ h5 {
     width: 100% !important;
     margin: 0 !important;
   }
+  .about-me h2 {
+    width: 100% !important;
+    margin: auto !important;
+    width: 100%;
+  }
   #text-container {
     line-height: 1.5;
   }
