@@ -393,7 +393,7 @@ strong {
     //position: center;
     //margin-left: 30px; */
     margin-top: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
     padding: 0;
   }
 }
