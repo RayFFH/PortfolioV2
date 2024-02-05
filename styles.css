@@ -379,19 +379,21 @@ strong {
 
 .tech-stack {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 3fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
   gap: 20px;
   /* margin: 2em auto; */
   margin: auto;
   width: 100%;
   /* //margin: 2em; */
   max-width: 870px;
+}
 
-  @media (max-width: 875px) {
+@media (max-width: 875px) {
+  .tech-stack {
     max-width: 330px;
     /* //margin: auto;
-    //position: center;
-    //margin-left: 30px; */
+  //position: center;
+  //margin-left: 30px; */
     margin-top: 2em;
     grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
     padding: 0;
